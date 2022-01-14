@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MSc Data Mining</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../style/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../../style/codehilite/css/default.css" rel="stylesheet">
+    <link href="../../../style/misc/css/module.css" rel="stylesheet">
+    <link href="../../../style/misc/css/practical.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<script type="text/javascript"
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+
+  </head>
+
+<body>
+
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			
+			
+	    	<div class="collapse navbar-collapse">
+
+				<ul class="nav navbar-nav navbar-left">
+					<!-- Moodle -->
+					<li>
+						<div class="navbar-header">
+							<a class="navbar-brand" href="https://moodle.wit.ie/course/view.php?id=182990" target="_blank"><img height="18pt" src="../../../style/misc/img/moodle_logo_on_blue.gif" /></a>
+						</div>						
+					</li>
+				</ul>
+
+	      		<ul class="nav navbar-nav navbar-right">
+
+					<!-- module home -->
+					<li>
+						<div class="navbar-header">
+							<a class="navbar-brand" href="../../../index.html"><span class="glyphicon glyphicon-home"></span></a>
+						</div>						
+					</li>
+					
+					<!-- topics -->
+	        		<li>
+						<div class="navbar-collapse collapse" id="b">
+							<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										<span class="glyphicon glyphicon-list-alt"></span>
+									</a>
+									<ul class="dropdown-menu" role="menu">
+										<li class="dropdown-header">Topics</li>
+										
+										<li class="active">
+											<a href="../../../topics/01-Module_Overview/index.html">Module Overview</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/02-Data_Handling/index.html">Data Handling</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/03-Exploratory_Data_Analysis/index.html">Exploratory Data Analysis</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/04-Data_Modelling_-_Introduction/index.html">Data Modelling - Introduction</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/05-Regression/index.html">Regression</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/06-Classification/index.html">Classification</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/07-Data_Modelling_-_Advanced/index.html">Data Modelling - Advanced</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/08-Advanced_Classification/index.html">Advanced Classification</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/09-Clustering/index.html">Clustering</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/10-Association_Analysis/index.html">Association Analysis</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/11-Anomaly_Detection_and_Recommendation_Systems/index.html">Anomaly Detection and Recommendation Systems</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/12-Deep_Learning/index.html">Deep Learning</a>
+										</li>
+										
+									</ul>
+								</li>
+							</ul>
+						</div>			
+					</li>
+
+					<!-- resources -->
+	        		<li>
+						<div class="navbar-collapse collapse" id="b">
+							<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										<span class="glyphicon glyphicon-th-list"></span>
+									</a>
+									<ul class="dropdown-menu" role="menu">
+										<li class="dropdown-header">Resources</li>
+										
+										<li class="active">
+											<a href="../../../topics/01-Module_Overview/index.html#01-Pre-Start_Lab">Pre-Start Lab</a>
+										</li>
+										
+									</ul>
+								</li>
+							</ul>
+						</div>			
+					</li>
+								
+					<!-- pages-->
+	        		<li>
+						<div class="navbar-collapse collapse" id="c">
+							<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										<span>Software</span
+									</a>
+									<ul class="dropdown-menu" role="menu">
+										
+										<li >
+											<a href="00-Outline.html">Outline</a>
+										</li>
+										
+										<li class="active">
+											<a href="01-Software.html">Software</a>
+										</li>
+										
+										<li >
+											<a href="02-Data_Exploration.html">Data Exploration</a>
+										</li>
+										
+									</ul>
+								</li>
+							</ul>
+						</div>			
+					</li> 
+					
+	        	</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- contents -->
+	<div class="container">
+		
+		<ul class="pager">
+			
+			<li class="previous"><a href="00-Outline.html">&larr; Previous (Outline)</a></li>
+			
+			
+			
+			<li class="next"><a href="02-Data_Exploration.html">Next (Data Exploration) &rarr;</a></li>
+			
+		</ul>
+		
+		<h1>Install / Verify a Suitable  Python Environment</h1>
+<p><strong>Contents</strong></p>
+<ol>
+<li>
+<p><a href="#Background">Background</a><br/>
+ The tools that data science practitioners use have changed significantly in recent years. While we don't have time to go into much background detail here the next section mentions some of the main concepts and includes links for further reading.</p>
+</li>
+<li>
+<p><a href="#Installation">Installation</a><br/>
+Next we cover installation of python using either a full <a href="https://www.anaconda.com/products/individual">anaconda</a> distribution (about 3.1 GB) or a reduced <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a> distribution (about 248MB).  We would recommend you install the full anaconda distibution </p>
+</li>
+<li><a href="#ExtraPackages">Extra Packages</a><br/>
+ In addition to the main python data analysis modules of <a href="https://pandas.pydata.org">pandas</a>, <a href="https://scikit-learn.org/stable/">scikit-learn</a>, etc., we will use numerous other modules which will be listed here. </li>
+</ol>
+<p><a name="Background"></a></p>
+<h2>Background</h2>
+<p>Traditionally, data mining was done using a suite of different tools:</p>
+<ul>
+<li>Diagramming tools (such as MS Visio) for system specification.</li>
+<li>ETL tools (such as <a href="https://www.hitachivantara.com/en-us/products/data-management-analytics.html">Pentaho Kettle, now part of Hitachi's DataOps suite</a>) for acquiring data, often from operational databases and sometimes from data warehouses.</li>
+<li>SQL scripts for combining and transforming the data en route (e.g., generating statistical summaries).</li>
+<li>Proprietary statistical packages (such as <a href="https://www.sas.com/en_us/software/enterprise-miner.html">SAS</a>, <a href="https://www.ibm.com/us-en/marketplace/spss-modeler">SPSS (now acquired by IBM)</a>, etc.) for the more complex analyses and visualisations.</li>
+<li>A mixture of languages and technologies (shell scripts, Java, C++, Javascript, etc.) to build the overall application that is deployed in production, e.g., to provide a web application for fraud checking.</li>
+</ul>
+<p>Nowadays we distinguish between two data mining usage patterns:</p>
+<ul>
+<li><em>exploring</em> the data and hence the underlying data-generating processes, and relating this data to a business/research objective, <em>by analysts</em>,</li>
+<li><em>adding value</em> by deploying the analysis procedures thus discovered to data in production, and integrating it with business processes, <em>by software engineers</em>.</li>
+</ul>
+<p>Traditional approaches introduce a lot of complexity (in the form of interfaces and context shifts) and require significant know-how, and are not optimal for either usage pattern.</p>
+<p>Many analysts like to use a single, GUI-based tool for their workflows. ISL <code>Clementine</code> (spun out from the University of Birmingham in the 1990s) was the tool that introduced the <em>workflow</em> metaphor and is now available as <a href="https://www.ibm.com/us-en/marketplace/spss-modeler">IBM SPSS Modeler Professional</a>. Such tools are expensive, which has encouraged competition from lower price/free equivalents. <a href="https://www.knime.org">KNIME</a> is <em>one of</em> its (commercial) open source competitors (others include <a href="https://rapidminer.com/">RapidMiner</a> and <a href="https://orange.biolab.si/">orange</a>), using the same template as the original product but with enhanced features and performance.</p>
+<p>More recently, the <a href="https://cran.r-project.org/doc/manuals/R-intro.pdf">R</a> (and <a href="https://jakevdp.github.io/PythonDataScienceHandbook/">python</a>) data science communities have embraced the <a href="https://www.wikipedia.org/wili/Literate_programming">literate programming</a> paradigm of <a href="https://yihui.name/knitr">Knitr</a> and <a href="https://jupyter.org">Jupyter</a> <em>notebooks</em> which allows them to script function calls to powerful libraries, weaving this code with its own output (including graphs) and text that is typeset as LaTeX or markdown, respectively. Such code can be extracted and inserted into applications using Big Data frameworks with relatively little effort.</p>
+<p>Both the R and python data science communities are very active and solutions such as KNIME now position themselves as <em>platforms</em> that can be extended with user-provided modules written in a variety of languages, notably including R and python.</p>
+<p>Therefore, we will use <a href="https://jupyter.org">Jupyter</a> as the primary learning tool, both for sourcing the data and for the data mining process itself.</p>
+<p><a name="Installation"></a></p>
+<h2>Installation</h2>
+<p>While any Python 3.9 distribution should be suitable for our needs, we recommend you either install a full <a href="https://www.anaconda.com/products/individual">anaconda</a> distribution (about 3.1 GB) or a reduced <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a> distribution (about 248MB).</p>
+<p>Which should you choose? To be honest, it doesn't really matter but if you want to </p>
+<ul>
+<li>get python development up and running quickly while suffering poor connection issues &mdash; use <code>miniconda</code>.</li>
+<li>get more experience installing packages &mdash; use <code>miniconda</code>.</li>
+<li>avoid (as much as possible) all that package management "stuff" &mdash; use <code>anaconda</code>.</li>
+<li>play around and explore python tools &mdash; use <code>anaconda</code>.</li>
+</ul>
+<p>So with <code>miniconda</code> you will have faster initial download and less hard disk space used, but you will find that you will need to install extra packages more frequently than an <code>anaconda</code> user.</p>
+<p>It is possible to have multiple python distributions installed on your system &mdash; you just have to manage the system paths so to allow you to switch between.  </p>
+<p>Finally, there are other options &mdash; all of which should be suitable for this course's needs. However, while we are happy to help sort out issues our priority will be sorting issues in <code>anaconda</code> and <code>miniconda</code>.</p>
+<ul>
+<li>Standard Python from <a href="https://www.python.org/">Python Software Foundation</a>.</li>
+<li>On OS X using <a href="https://docs.brew.sh/Homebrew-and-Python">homebrew</a> of <a href="https://www.macports.org/">MacPorts</a>, see <a href="https://saagarjha.com/blog/2019/04/26/thoughts-on-macos-package-managers/">Thoughts on macOS Package Managers</a>.</li>
+<li><a href="https://assets.enthought.com/downloads/">Enthought Deployment Manager (EDM)</a>.</li>
+</ul>
+<h3>Anaconda (Full python distribution)</h3>
+<p>To install anaconda:</p>
+<ul>
+<li>Pick any suitable 64-bit, Python 3.9 installer for you system from <a href="https://www.anaconda.com/products/individual">anaconda</a>.</li>
+<li>Run installer and default options should work for your system (But to be sure, 
+ read options and verify that any option like 
+ "Add python to PATH environment variable",
+ "Increase length of PATH environment variable",
+ or
+ "Register Anaconda as my default Python" is enabled). 
+ Under OS X, I typically install into my home directory, so will end up with a folder <code>~/anacond3</code>.</li>
+</ul>
+<h3>Miniconda (python distribution)</h3>
+<p>To install miniconda:</p>
+<ul>
+<li>Pick any suitable 64-bit, Python 3.9 installer for you system from <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a>.</li>
+<li>Run installer and default options should work for your system. Under OS X, I typically install into my home directory, so will end up with a folder <code>~/miniconda3</code>.</li>
+</ul>
+<h3>Verify Installation</h3>
+<p>Regardless of anaconda/miniconda option you picked, once installed you should be able to run python from the command line. </p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>python
+</code></pre></div>
+</td></tr></table>
+<p>to get output and python prompt</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>Python <span class="m">3</span>.9.7 <span class="o">(</span>default, Sep <span class="m">16</span> <span class="m">2021</span>, <span class="m">08</span>:50:36<span class="o">)</span>
+<span class="o">[</span>Clang <span class="m">10</span>.0.0 <span class="o">]</span> :: Anaconda, Inc. on darwin
+Type <span class="s2">&quot;help&quot;</span>, <span class="s2">&quot;copyright&quot;</span>, <span class="s2">&quot;credits&quot;</span> or <span class="s2">&quot;license&quot;</span> <span class="k">for</span> more information.
+&gt;&gt;&gt;
+</code></pre></div>
+</td></tr></table>
+<p>Type <code>1+1</code> at the prompt and press enter. You should get <code>2</code> or we are in trouble.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span><span class="o">+</span><span class="mi">1</span>
+<span class="mi">2</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">quit</span><span class="p">()</span>
+</code></pre></div>
+</td></tr></table>
+<p>Use <code>quit()</code> to exit the python shell and return to the command prompt.</p>
+<p><a name="ExtraPackages"></a></p>
+<h2>Extra Packages</h2>
+<p>Both <code>anaconda</code> and <code>miniconda</code> use a package manager called <code>conda</code>. To install a package you typically use command </p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">PACKAGE_NAME</span>
+</code></pre></div>
+</td></tr></table>
+<p>The <code>-y</code> option causes the install to automatically carry out required installs/updated instead of asking for user confirmation. </p>
+<p>Note: some packages are not installable using <code>conda</code>, in these cases or if your are using a standard (non-anaconda variant) distribution you can install using the <code>pip</code> installer using </p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="n">PACKAGE_NAME</span>
+</code></pre></div>
+</td></tr></table>
+<h3>Side Note: Environments</h3>
+<p>Both <code>conda</code> and <code>pip</code> support the idea of environments where within the one python distributions you might have a multiple of environments. This is to help avoid version conflicts between modules.  <code>aanconda</code> and <code>miniconda</code> both start with one default environment called <code>root</code>.  If you wish to use environments, you need to apply two steps: 1) create an environment using </p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">data_mining</span>
+</code></pre></div>
+</td></tr></table>
+<p>and 2) activate it using </p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">activate</span> <span class="n">data_mining</span>
+</code></pre></div>
+</td></tr></table>
+<p>Since all of the packages that we plan to use work are (currently, Jan 2022) compatible we won't need to use multiple environments but they are a good idea and if you are interested there is a nice introduction at <a href="https://astrobiomike.github.io/unix/conda-intro">
+Happy Belly Bioinformatic</a>.</p>
+<h3>Packages that need installing if using <code>miniconda</code></h3>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">numpy</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">scipy</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">matplotlib</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">seaborn</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="o">-</span><span class="n">y</span> <span class="n">jupyterlab</span>
+</code></pre></div>
+</td></tr></table>
+<p>(we will update the above list during the semester, if needed)</p>
+<h3>Packages that need installing if using <code>miniconda</code> or <code>anaconda</code></h3>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="o">-</span><span class="n">y</span> <span class="n">dtale</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="o">-</span><span class="n">y</span> <span class="n">voila</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="o">-</span><span class="n">y</span> <span class="n">featuretools</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">anaconda</span> <span class="o">-</span><span class="n">y</span> <span class="n">graphviz</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">anaconda</span> <span class="o">-</span><span class="n">y</span> <span class="n">pydot</span>
+
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="o">-</span><span class="n">y</span> <span class="n">phik</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="o">-</span><span class="n">y</span> <span class="n">pingouin</span>
+</code></pre></div>
+</td></tr></table>
+<p>(we will update the above list during the semester, if needed)</p>
+		
+		<ul class="pager">
+			
+			<li class="previous"><a href="00-Outline.html">&larr; Previous (Outline)</a></li>
+			
+			
+			
+			<li class="next"><a href="02-Data_Exploration.html">Next (Data Exploration) &rarr;</a></li>
+			
+		</ul>
+
+	</div>
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../../style/bootstrap/js/bootstrap.min.js"></script>
+	
+  </body>
+</html>
