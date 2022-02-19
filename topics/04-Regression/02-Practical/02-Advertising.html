@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>MSc Data Mining</title>
+    <title>MSc - Data Mining</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../../style/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -71,7 +71,7 @@
 									<ul class="dropdown-menu" role="menu">
 										<li class="dropdown-header">Topics</li>
 										
-										<li class="active">
+										<li >
 											<a href="../../../topics/01-Module_Overview/index.html">Module Overview</a>
 										</li>
 										
@@ -87,7 +87,7 @@
 											<a href="../../../topics/03-Data_Modelling_-_Introduction/index.html">Data Modelling - Introduction</a>
 										</li>
 										
-										<li >
+										<li class="active">
 											<a href="../../../topics/04-Regression/index.html">Regression</a>
 										</li>
 										
@@ -140,43 +140,16 @@
 									<ul class="dropdown-menu" role="menu">
 										<li class="dropdown-header">Resources</li>
 										
+										<li >
+											<a href="../../../topics/04-Regression/index.html#01-Overview">Overview</a>
+										</li>
+										
 										<li class="active">
-											<a href="../../../topics/01-Module_Overview/index.html#01-Pre-Start_Lab">Pre-Start Lab</a>
+											<a href="../../../topics/04-Regression/index.html#02-Practical">Practical</a>
 										</li>
 										
 										<li >
-											<a href="../../../topics/01-Module_Overview/index.html#02-Pre-Start_Lab_-_Feedback">Pre-Start Lab - Feedback</a>
-										</li>
-										
-										<li >
-											<a href="../../../topics/01-Module_Overview/index.html#03-Module_Introduction">Module Introduction</a>
-										</li>
-										
-										<li >
-											<a href="../../../topics/01-Module_Overview/index.html#04-A_Review_of_Statistical_Concepts">A Review of Statistical Concepts</a>
-										</li>
-										
-										<li >
-											<a href="../../../topics/01-Module_Overview/index.html#05-Optimisation_Overview">Optimisation Overview</a>
-										</li>
-										
-										<li >
-											<a href="../../../topics/01-Module_Overview/index.html#06-Top_X_pandas_commands">Top X pandas commands</a>
-										</li>
-										
-										<li >
-<<<<<<< HEAD
-=======
-											<a href="../../../topics/01-Module_Overview/index.html#21-Lab_01_-_Introduction_to_Pandas">Lab 01 - Introduction to Pandas</a>
-										</li>
-										
-										<li >
-											<a href="../../../topics/01-Module_Overview/index.html#22-Lab_01_-_Feedback">Lab 01 - Feedback</a>
-										</li>
-										
-										<li >
->>>>>>> 16411088e27a57ce875892d947d7e69ce7a8ee5e
-											<a href="../../../topics/01-Module_Overview/index.html#42-Additional_Resources">Additional Resources</a>
+											<a href="../../../topics/04-Regression/index.html#03-Resources">Resources</a>
 										</li>
 										
 									</ul>
@@ -191,20 +164,28 @@
 							<ul class="nav navbar-nav">
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-										<span>Outline</span
+										<span>Advertising</span
 									</a>
 									<ul class="dropdown-menu" role="menu">
 										
-										<li class="active">
+										<li >
 											<a href="00-Outline.html">Outline</a>
 										</li>
 										
 										<li >
-											<a href="01-Software.html">Software</a>
+											<a href="01-Diamonds.html">Diamonds</a>
+										</li>
+										
+										<li class="active">
+											<a href="02-Advertising.html">Advertising</a>
 										</li>
 										
 										<li >
-											<a href="02-Data_Exploration.html">Data Exploration</a>
+											<a href="03-CreditBalance.html">CreditBalance</a>
+										</li>
+										
+										<li >
+											<a href="04-ConfidenceLimits.html">ConfidenceLimits</a>
 										</li>
 										
 									</ul>
@@ -223,39 +204,52 @@
 		
 		<ul class="pager">
 			
-			<li class="previous disabled"><a>&larr; Previous</a></li>
+			<li class="previous"><a href="01-Diamonds.html">&larr; Previous (Diamonds)</a></li>
 			
 			
 			
-			<li class="next"><a href="01-Software.html">Next (Software) &rarr;</a></li>
+			<li class="next"><a href="03-CreditBalance.html">Next (CreditBalance) &rarr;</a></li>
 			
 		</ul>
 		
-		<h1>Pre-Start Lab</h1>
-<p>Typically the Monday lab sessions will based on the material covered in the preceding Friday's lecture, and will usually consist of an on-line slack session. However, for the first week we will run a more hands-on lab session to help address any issues that people might have with installing the software or interacting with the course material.</p>
-<p>To achieve this, the aims of this lab session are:</p>
-<ul>
-<li>
-<p><a href="01-Software.html">Install / Verify a Suitable Python Environment</a><br/>
- We will use a Python 3.9 distribution and all additional modules that will be used during this course have been tested to ensure no incompatibilities at this time.</p>
-</li>
-<li>
-<p><a href="02-Data_Exploration.html">Review of Basic Data Exploration Skills.</a><br/>
- We (or more accurately you) will take a small dataset based on records of server tips, and explore it using the software tool of your choice. Later we will preform the same analysis using <code>pandas</code>, but for now the focus is on seeing what you can see when you look at data.</p>
-</li>
-<li>
-<p><a href="02-Data_Exploration.html#Quiz">Develop Familiarity with Moodle, in Particular Moodle Activities (Quiz)</a><br/>
- To help direct your data exploration, mentioned above, we have a small Moodle quiz based on the server tips.  This quiz is formative (i.e., not summative) so does not contribute towards your overall grade. However, it is a good opportunity gain familiarity with Moodle, Moodle quizzes &amp; assignments.<br/><br/></p>
-</li>
-</ul>
+		<h1>The Advertising Data Example</h1>
+<p>We recommend that you create an <code>Advertising</code> folder and save the notebook you are working on to that folder.</p>
+<h2>Read the data from a csv file.</h2>
+<p>This is where the <a href="https://pandas.pydata.org/">pandas</a> is very useful, as it provides much of the basic data handling required for python machine learning.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">dataFile</span> <span class="o">=</span> <span class="s2">&quot;data/Advertising.csv&quot;</span>
+<span class="n">ad</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">dataFile</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<h2>Review the data</h2>
+<p>This is an opportunity to use the exploratory data analysis (EDA) techniques that were covered by Kieran in Week 3.</p>
+<p>Use scatter plots, overlaid on the same plot, to get a sense of how Sales varies with Newspaper, Radio and TV.</p>
+<h2>Fit the training data using <em>all</em> the natural predictors</h2>
+<p>As we did in class, we are going to compare different linear models, beginning with the full set of natural predictors. You might find the following helpful:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">statsmodels.formula.api</span> <span class="k">as</span> <span class="nn">sm</span>
+<span class="n">modelAll</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">ols</span><span class="p">(</span><span class="s1">&#39;Sales ~ TV + Radio + Newspaper&#39;</span><span class="p">,</span> <span class="n">ad</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+</code></pre></div>
+</td></tr></table>
+<p>As with the diamond data, you will also need the $R^2$ and root-mean-square residual error (RMSRE) of each fit as metrics for this and other OLS fits to the Advertising data.</p>
+<p>You should review the model summary, residuals, etc, to look for evidence that the fit satisfies the assumptions of linear regression. You should make a note of your findings in nearby markdown cells.</p>
+<h2>Use forward selection techniques to find the "best" model</h2>
+<p>The slides presented in class describe how to proceed. This is a "greedy" search technique (in the sense that you choose the best available option at each stage, without trying to decide what would be the best option over all stages). You should find that the best model with the existing predictors has the formula <code>Sales ~ TV + Radio</code> but that it can be improved if the TV-radio interaction term <code>TV:Radio</code> is added.</p>
+<h2>Plotting the multivariate residuals</h2>
+<p>With the Diamond data, there was only one prediction variable so it was easy to visualise the residuals, since they were functions of one variable (<code>weight</code>). For the advertising data, with more than one predictor (such as the best model above), plotting residuals is more difficult. It is possible to suppress a variable (i.e., TV <em>or</em> Sales ) one at a time and this provides some indication of their distribution, but interpreting the the resulting pair of plots requires care.</p>
+<p>Plotting multivariate residuals directly requires advanced visualisation techniques. </p>
+<h2>Resources</h2>
+<p>The <a href="files/data/Advertising.csv">data file</a> (right-click and download as `Advertising/data/Advertising.csv) is available.</p>
 		
 		<ul class="pager">
 			
-			<li class="previous disabled"><a>&larr; Previous</a></li>
+			<li class="previous"><a href="01-Diamonds.html">&larr; Previous (Diamonds)</a></li>
 			
 			
 			
-			<li class="next"><a href="01-Software.html">Next (Software) &rarr;</a></li>
+			<li class="next"><a href="03-CreditBalance.html">Next (CreditBalance) &rarr;</a></li>
 			
 		</ul>
 

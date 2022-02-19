@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>MSc Data Mining</title>
+    <title>MSc - Data Mining</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../../style/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -71,7 +71,7 @@
 									<ul class="dropdown-menu" role="menu">
 										<li class="dropdown-header">Topics</li>
 										
-										<li class="active">
+										<li >
 											<a href="../../../topics/01-Module_Overview/index.html">Module Overview</a>
 										</li>
 										
@@ -87,7 +87,7 @@
 											<a href="../../../topics/03-Data_Modelling_-_Introduction/index.html">Data Modelling - Introduction</a>
 										</li>
 										
-										<li >
+										<li class="active">
 											<a href="../../../topics/04-Regression/index.html">Regression</a>
 										</li>
 										
@@ -140,43 +140,16 @@
 									<ul class="dropdown-menu" role="menu">
 										<li class="dropdown-header">Resources</li>
 										
+										<li >
+											<a href="../../../topics/04-Regression/index.html#01-Overview">Overview</a>
+										</li>
+										
 										<li class="active">
-											<a href="../../../topics/01-Module_Overview/index.html#01-Pre-Start_Lab">Pre-Start Lab</a>
+											<a href="../../../topics/04-Regression/index.html#02-Practical">Practical</a>
 										</li>
 										
 										<li >
-											<a href="../../../topics/01-Module_Overview/index.html#02-Pre-Start_Lab_-_Feedback">Pre-Start Lab - Feedback</a>
-										</li>
-										
-										<li >
-											<a href="../../../topics/01-Module_Overview/index.html#03-Module_Introduction">Module Introduction</a>
-										</li>
-										
-										<li >
-											<a href="../../../topics/01-Module_Overview/index.html#04-A_Review_of_Statistical_Concepts">A Review of Statistical Concepts</a>
-										</li>
-										
-										<li >
-											<a href="../../../topics/01-Module_Overview/index.html#05-Optimisation_Overview">Optimisation Overview</a>
-										</li>
-										
-										<li >
-											<a href="../../../topics/01-Module_Overview/index.html#06-Top_X_pandas_commands">Top X pandas commands</a>
-										</li>
-										
-										<li >
-<<<<<<< HEAD
-=======
-											<a href="../../../topics/01-Module_Overview/index.html#21-Lab_01_-_Introduction_to_Pandas">Lab 01 - Introduction to Pandas</a>
-										</li>
-										
-										<li >
-											<a href="../../../topics/01-Module_Overview/index.html#22-Lab_01_-_Feedback">Lab 01 - Feedback</a>
-										</li>
-										
-										<li >
->>>>>>> 16411088e27a57ce875892d947d7e69ce7a8ee5e
-											<a href="../../../topics/01-Module_Overview/index.html#42-Additional_Resources">Additional Resources</a>
+											<a href="../../../topics/04-Regression/index.html#03-Resources">Resources</a>
 										</li>
 										
 									</ul>
@@ -191,20 +164,28 @@
 							<ul class="nav navbar-nav">
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-										<span>Outline</span
+										<span>Diamonds</span
 									</a>
 									<ul class="dropdown-menu" role="menu">
 										
-										<li class="active">
+										<li >
 											<a href="00-Outline.html">Outline</a>
 										</li>
 										
-										<li >
-											<a href="01-Software.html">Software</a>
+										<li class="active">
+											<a href="01-Diamonds.html">Diamonds</a>
 										</li>
 										
 										<li >
-											<a href="02-Data_Exploration.html">Data Exploration</a>
+											<a href="02-Advertising.html">Advertising</a>
+										</li>
+										
+										<li >
+											<a href="03-CreditBalance.html">CreditBalance</a>
+										</li>
+										
+										<li >
+											<a href="04-ConfidenceLimits.html">ConfidenceLimits</a>
 										</li>
 										
 									</ul>
@@ -223,39 +204,36 @@
 		
 		<ul class="pager">
 			
-			<li class="previous disabled"><a>&larr; Previous</a></li>
+			<li class="previous"><a href="00-Outline.html">&larr; Previous (Outline)</a></li>
 			
 			
 			
-			<li class="next"><a href="01-Software.html">Next (Software) &rarr;</a></li>
+			<li class="next"><a href="02-Advertising.html">Next (Advertising) &rarr;</a></li>
 			
 		</ul>
 		
-		<h1>Pre-Start Lab</h1>
-<p>Typically the Monday lab sessions will based on the material covered in the preceding Friday's lecture, and will usually consist of an on-line slack session. However, for the first week we will run a more hands-on lab session to help address any issues that people might have with installing the software or interacting with the course material.</p>
-<p>To achieve this, the aims of this lab session are:</p>
+		<h1>The Diamond Data Example</h1>
+<p>An annotated <a href="files/Case2_Diamonds.ipynb">notebook</a> (right-click and Download as <code>Diamonds/Case2_Diamonds.ipynb</code>) has been prepared, based on existing published notebooks but with enhancements a) to include new features and b) to provide extra explanations of what is happening.</p>
+<p>The workbook includes two short exercises:</p>
+<ol>
+<li>Mean-centre the data and interpret the results</li>
+<li>Display the residuals and check certain properties graphically</li>
+</ol>
+<p>Note that centring data by its mean is generally good advice</p>
 <ul>
-<li>
-<p><a href="01-Software.html">Install / Verify a Suitable Python Environment</a><br/>
- We will use a Python 3.9 distribution and all additional modules that will be used during this course have been tested to ensure no incompatibilities at this time.</p>
-</li>
-<li>
-<p><a href="02-Data_Exploration.html">Review of Basic Data Exploration Skills.</a><br/>
- We (or more accurately you) will take a small dataset based on records of server tips, and explore it using the software tool of your choice. Later we will preform the same analysis using <code>pandas</code>, but for now the focus is on seeing what you can see when you look at data.</p>
-</li>
-<li>
-<p><a href="02-Data_Exploration.html#Quiz">Develop Familiarity with Moodle, in Particular Moodle Activities (Quiz)</a><br/>
- To help direct your data exploration, mentioned above, we have a small Moodle quiz based on the server tips.  This quiz is formative (i.e., not summative) so does not contribute towards your overall grade. However, it is a good opportunity gain familiarity with Moodle, Moodle quizzes &amp; assignments.<br/><br/></p>
-</li>
+<li>Some analyses make sense only with mean-centred and/or normalised data;</li>
+<li>Generally, mean-centred data has better <em>numerical</em> properties, making statistical procedures more precise.</li>
 </ul>
+<h2>Resources</h2>
+<p>The <a href="files/data/diamond.dat.txt">data file</a> (right-click and Download as <code>Diamonds/data/diamond.dat.txt</code>) is available.</p>
 		
 		<ul class="pager">
 			
-			<li class="previous disabled"><a>&larr; Previous</a></li>
+			<li class="previous"><a href="00-Outline.html">&larr; Previous (Outline)</a></li>
 			
 			
 			
-			<li class="next"><a href="01-Software.html">Next (Software) &rarr;</a></li>
+			<li class="next"><a href="02-Advertising.html">Next (Advertising) &rarr;</a></li>
 			
 		</ul>
 
