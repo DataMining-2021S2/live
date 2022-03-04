@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MSc Data Mining</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../style/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../../style/codehilite/css/default.css" rel="stylesheet">
+    <link href="../../../style/misc/css/module.css" rel="stylesheet">
+    <link href="../../../style/misc/css/practical.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<script type="text/javascript"
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+
+  </head>
+
+<body>
+
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			
+			
+	    	<div class="collapse navbar-collapse">
+
+				<ul class="nav navbar-nav navbar-left">
+					<!-- Moodle -->
+					<li>
+						<div class="navbar-header">
+							<a class="navbar-brand" href="https://moodle.wit.ie/course/view.php?id=182990" target="_blank"><img height="18pt" src="../../../style/misc/img/moodle_logo_on_blue.gif" /></a>
+						</div>						
+					</li>
+					<li>
+						<div class="navbar-header">
+							<a class="navbar-brand" href="https://moodle.wit.ie/course/view.php?id=182990" target="_blank"><img height="18pt" src="../../../style/misc/img/slack_logo.png" /></a>
+						</div>						
+					</li>
+				</ul>
+
+	      		<ul class="nav navbar-nav navbar-right">
+
+					<!-- module home -->
+					<li>
+						<div class="navbar-header">
+							<a class="navbar-brand" href="../../../index.html"><span class="glyphicon glyphicon-home"></span></a>
+						</div>						
+					</li>
+					
+					<!-- topics -->
+	        		<li>
+						<div class="navbar-collapse collapse" id="b">
+							<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										<span class="glyphicon glyphicon-list-alt"></span>
+									</a>
+									<ul class="dropdown-menu" role="menu">
+										<li class="dropdown-header">Topics</li>
+										
+										<li >
+											<a href="../../../topics/01-Module_Overview/index.html">Module Overview</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/02-Data_Handling/index.html">Data Handling</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/02-Exploratory_Data_Analysis/index.html">Exploratory Data Analysis</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/03-Data_Modelling_-_Introduction/index.html">Data Modelling - Introduction</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/04-Regression/index.html">Regression</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/05-Classification/index.html">Classification</a>
+										</li>
+										
+										<li class="active">
+											<a href="../../../topics/06-Data_Modelling_-_Advanced/index.html">Data Modelling - Advanced</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/07-Advanced_Classification/index.html">Advanced Classification</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/08-Clustering/index.html">Clustering</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/09-Association_Analysis/index.html">Association Analysis</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/10-Anomaly_Detection_and_Recommendation_Systems/index.html">Anomaly Detection and Recommendation Systems</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/11-Deep_Learning/index.html">Deep Learning</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/21-Assignments/index.html">Assignments</a>
+										</li>
+										
+									</ul>
+								</li>
+							</ul>
+						</div>			
+					</li>
+
+					<!-- resources -->
+	        		<li>
+						<div class="navbar-collapse collapse" id="b">
+							<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										<span class="glyphicon glyphicon-th-list"></span>
+									</a>
+									<ul class="dropdown-menu" role="menu">
+										<li class="dropdown-header">Resources</li>
+										
+										<li >
+											<a href="../../../topics/06-Data_Modelling_-_Advanced/index.html#01-Data_Modelling_-_Advanced">Data Modelling - Advanced</a>
+										</li>
+										
+										<li class="active">
+											<a href="../../../topics/06-Data_Modelling_-_Advanced/index.html#21-Lab_06_-_Titanic_-_Advanced_Model_Building">Lab 06 - Titanic - Advanced Model Building</a>
+										</li>
+										
+									</ul>
+								</li>
+							</ul>
+						</div>			
+					</li>
+								
+					<!-- pages-->
+	        		<li>
+						<div class="navbar-collapse collapse" id="c">
+							<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										<span>Baseline Model</span
+									</a>
+									<ul class="dropdown-menu" role="menu">
+										
+										<li >
+											<a href="00-Outline.html">Outline</a>
+										</li>
+										
+										<li >
+											<a href="01-Load.html">Load</a>
+										</li>
+										
+										<li class="active">
+											<a href="02-Baseline_Model.html">Baseline Model</a>
+										</li>
+										
+										<li >
+											<a href="03-Feature_Engineering.html">Feature Engineering</a>
+										</li>
+										
+										<li >
+											<a href="04-Hyper-parameter_Tuning.html">Hyper-parameter Tuning</a>
+										</li>
+										
+										<li >
+											<a href="05-Tuned_Model.html">Tuned Model</a>
+										</li>
+										
+										<li >
+											<a href="06-Test_Model.html">Test Model</a>
+										</li>
+										
+									</ul>
+								</li>
+							</ul>
+						</div>			
+					</li> 
+					
+	        	</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- contents -->
+	<div class="container">
+		
+		<ul class="pager">
+			
+			<li class="previous"><a href="01-Load.html">&larr; Previous (Load)</a></li>
+			
+			
+			
+			<li class="next"><a href="03-Feature_Engineering.html">Next (Feature Engineering) &rarr;</a></li>
+			
+		</ul>
+		
+		<h1>Baseline Model</h1>
+<p>In this section we are going to build a baseline model.  This model serves two purposes:</p>
+<ul>
+<li>
+<p>Verifies the overall model building code.  Here I'm using <a href="sklearn.pipeline.Pipeline">sklearn's Pipelines</a> to do everything. Using pipeline has advantages when everything is working but tracking down errors can sometimes be difficult as error messages tend to be more verbose and cryptic. On balance, I think the pipeline approach is easier - hence its use here.  However, if you want, you can carry out this practical without using pipelines.</p>
+</li>
+<li>
+<p>Gives us an initial score, against which we can compare our progress.  Running <code>df.Survived.value_counts(normalize=True)</code> we see that 38.3% of the people did not survive. So a trivial model that always predicts <code>died</code> will have an accuracy of 61.6%. We can do much better than that with 10 minutes of coding to get a baseline model. </p>
+</li>
+</ul>
+<h2>Define Variables (cat/num features and target)</h2>
+<p>Following the pipeline approach, I start by identifying categorical and numerical features (since they will be preprocessed differently).</p>
+<p>And to get things started, I'm just going to pick two features <code>Sex</code> and <code>Age</code>.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">categorical_features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span>
+<span class="n">numerical_features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span>
+
+<span class="n">features</span> <span class="o">=</span> <span class="n">categorical_features</span> <span class="o">+</span> <span class="n">numerical_features</span>
+
+<span class="n">target</span> <span class="o">=</span> <span class="s1">&#39;Survived&#39;</span>
+<span class="n">variables</span> <span class="o">=</span> <span class="n">features</span> <span class="o">+</span> <span class="p">[</span><span class="n">target</span><span class="p">]</span>
+</code></pre></div>
+</td></tr></table>
+<h2>Deal with Missing Values</h2>
+<p>For my baseline model I'm going to be ultra lazy and drop missing values. As covered in class, this is easy but has two huge disadvantages:</p>
+<ul>
+<li>Dataset becomes smaller. This is a problem here since the starting dataset is not large to start (891 observations).</li>
+<li>Drooping rows with missing values assumes that the position of the missing values is random / not related to the target.  We don't know this. </li>
+</ul>
+<p>Ignoring the above warnings, I create a new dataframe, <code>df_model</code>, that contains the columns/variables (features and target) that I want, and the rows/observations that don't contain missing values. (Notice that I'm only dropping rows based on missing values in the columns that I have in my model.)</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">df_model</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">variables</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+<span class="n">df_model</span><span class="o">.</span><span class="n">shape</span>
+</code></pre></div>
+</td></tr></table>
+<p>This results in a dataset of shape <code>721 x 8</code></p>
+<h2>Train / Test Split</h2>
+<p>Nothing new done here ...</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">df_model</span><span class="p">[</span><span class="n">features</span><span class="p">],</span> <span class="n">df_model</span><span class="o">.</span><span class="n">Survived</span><span class="p">,</span> 
+    <span class="n">train_size</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="n">SEED</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<h2>Import Classifiers</h2>
+<p>We (you) are going to try out four classifiers. So lets import them all now</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">BernoulliNB</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">AdaBoostClassifier</span>
+</code></pre></div>
+</td></tr></table>
+<h2>Build Pipeline</h2>
+<p>We want pipeline</p>
+<p><strong>Step 1</strong></p>
+<ul>
+<li>categorical features to be encoded ... lets try the most popular encoding, 
+ <a href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html">OneHotEncoder</a></li>
+<li>numerical features to be scaled ... lets try <a href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html">StandardScalar</a></li>
+</ul>
+<p><strong>Step 2</strong></p>
+<ul>
+<li>Train classifier</li>
+</ul>
+<p>Step 1, is implemented using a <a href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.ColumnTransformer.html">ColumnTransformer</a></p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <span class="n">ColumnTransformer</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">preprocessing</span>
+<span class="n">column_transformer</span> <span class="o">=</span> <span class="n">ColumnTransformer</span><span class="p">([</span>
+    <span class="c1"># List of transformation to apply and which columns to apply it to. Each entry here has structure </span>
+    <span class="c1">#( NAME,                  CODE,                           COLUMNS_TO_APPLY),</span>
+    <span class="p">(</span> <span class="s1">&#39;categorical_features&#39;</span><span class="p">,</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">OneHotEncoder</span><span class="p">(),</span>  <span class="n">categorical_features</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s1">&#39;numerical_features&#39;</span><span class="p">,</span>   <span class="n">preprocessing</span><span class="o">.</span><span class="n">StandardScaler</span><span class="p">(),</span> <span class="n">numerical_features</span> <span class="p">),</span>
+<span class="p">])</span>
+</code></pre></div>
+</td></tr></table>
+<p>Step 2 is simpler and is just</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">(</span> <span class="s1">&#39;classifier&#39;</span><span class="p">,</span> <span class="n">LogisticRegression</span><span class="p">()</span> <span class="p">),</span>
+</code></pre></div>
+</td></tr></table>
+<p>So the complete pipeline is </p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
+<span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">(</span><span class="n">steps</span><span class="o">=</span><span class="p">[</span>
+    <span class="p">(</span> <span class="s1">&#39;column_transformer&#39;</span><span class="p">,</span> <span class="n">column_transformer</span> <span class="p">),</span>
+    <span class="p">(</span> <span class="s1">&#39;classifier&#39;</span><span class="p">,</span> <span class="n">LogisticRegression</span><span class="p">()</span> <span class="p">),</span>
+<span class="p">])</span>
+</code></pre></div>
+</td></tr></table>
+<p>Finally we have a model, To see how good it is we use cross validation scoring function, <code>cross_val_score</code>.
+I have increased the number of cross validation folds to 20, since the dataset is small, to reduce variability in the resulting accuracy estimate.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
+<span class="n">scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;CV estimate of accuracy is </span><span class="si">{</span><span class="n">scores</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2%</span><span class="si">}</span><span class="s2"> +/ </span><span class="si">{</span><span class="mi">2</span><span class="o">*</span><span class="n">scores</span><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span><span class="si">:</span><span class="s2">.2%</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<p>On my computer this gives </p>
+<p class="alert alert-success">CV estimate of accuracy is 76.76% +/ 0.97%</p>
+<p>OK, this is good. Now we want to improve this.</p>
+		
+		<ul class="pager">
+			
+			<li class="previous"><a href="01-Load.html">&larr; Previous (Load)</a></li>
+			
+			
+			
+			<li class="next"><a href="03-Feature_Engineering.html">Next (Feature Engineering) &rarr;</a></li>
+			
+		</ul>
+
+	</div>
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../../style/bootstrap/js/bootstrap.min.js"></script>
+	
+  </body>
+</html>
