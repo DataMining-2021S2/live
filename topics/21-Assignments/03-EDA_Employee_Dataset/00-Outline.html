@@ -144,8 +144,12 @@
 											<a href="../../../topics/21-Assignments/index.html#01-DM_Proposal">DM Proposal</a>
 										</li>
 										
-										<li class="active">
+										<li >
 											<a href="../../../topics/21-Assignments/index.html#02-Kaggle_Style_Competition">Kaggle Style Competition</a>
+										</li>
+										
+										<li class="active">
+											<a href="../../../topics/21-Assignments/index.html#03-EDA_Employee_Dataset">EDA Employee Dataset</a>
 										</li>
 										
 									</ul>
@@ -192,41 +196,81 @@
 			
 		</ul>
 		
-		<h1>Kaggle Style Competition</h1>
-<h2>Outline</h2>
-<p><a href="https://www.kaggle.com">Kaggle</a> is a data science community website that hosts numerous guides, datasets, and runs online competitions. Recently they added the feature of <a href="https://www.kaggle.com/c/about/community">Community Competitions</a> where anybody can host a competition using Kaggle's platform. </p>
-<p>Kaggle is a fantastic resource and to encourage you to explore it, this assignment is going to be run using Kaggle's platform. </p>
-<p>You'll need a private key to access the competition, which is semi-private. 
-This key can be found in the <a href="https://moodle.wit.ie/mod/assign/view.php?id=3718147">assignment page on Moodle</a>.</p>
-<p>Your task is to analyse the given dataset and construct a suitable classifier. The performance of your classifier is computed based on your uploaded predictions. </p>
-<h2>Details</h2>
+		<h1>Employees Dataset</h1>
+<h2>Aim</h2>
+<p>Given details of a sample of employees from Fortune 100 companies in the US, this assignment attempts to answer two (supervised learning) questions:</p>
+<ol>
+<li>How likely is it for a given employee to leave their current company in a specified time period? And can we predict this?</li>
+<li>How accurately can we predict a given employee's monthly income?</li>
+</ol>
+<p>The first of these is a <em>classification</em> problem and the second is a <em>regression</em> problem.</p>
+<p>The data includes many categorical and numerical attributes, all of which are candidate features for each model. Training data is provided so that students can derive a model predicting each of these two targets. Test data is also provided, where the target attribute is missing and so needs to be predicted.</p>
+<p>The dataset consists of <a href="files/data.zip">three files</a>:</p>
 <ul>
-<li>First create a Kaggle account (using whatever account name/details you wish) and read the competition instructions (Please ask if there is anything that is unclear).</li>
-<li>Setup a suitable ML project folder.</li>
-<li>Download the train and test datasets, <code>train.csv</code> and <code>test.csv</code>.</li>
-<li>Split <code>train.csv</code> into your train and test datasets. </li>
-<li>Train a classifier using the workflow covered during the course.</li>
-<li>Using your model, generate predictions for the data in <code>test.csv</code> and upload.</li>
-<li>At end of module upload your best scoring set of predictions to Moodle for grading.</li>
+<li>
+<p><a href="files/train.csv">train.csv</a>: List of 1020 employees. The columns can be loosely grouped as</p>
+<ul>
+<li>personal features consisting of <code>Employee_Number</code>, <code>Age</code>, <code>Gender</code>, <code>Education</code>, <code>Education_Field</code>, <code>Environment_Satisfaction</code>,<code>Marital_Status</code>, <code>Num_Companies_Worked</code>, <code>Over_18</code>, <code>Work_Life_Balance</code>, and <code>Total_Working_Years</code>.</li>
+<li>company features consisting of <code>Distance_from_Home</code>, <code>Employee_Count</code>, and <code>Years_at_Company</code>.</li>
+<li>work conditions related features <code>Business_Travel</code>, <code>Department</code>,<code>Job_Involvement</code>, <code>Job_Level</code>, <code>Job_Role</code>, <code>Years_in_Current_Role</code>, <code>Years_since_Last_Promotion</code>, and <code>Years_with_Curr_Manager</code>.</li>
+<li>job enumeration related features <code>Daily_Rate</code>, <code>Hourly_Rate</code>, <code>Monthly_Rate</code>, <code>Over_Time</code>,<code>Percent_Salary_Hike</code>, <code>Standard_Hours</code>, and <code>Stock_Option_Level</code>.</li>
+<li>feedback related features <code>Job_Satisfaction</code>, <code>Performance_Rating</code>, <code>Satisfaction_with_Manager</code>, and <code>Training_Times_Last_Year</code>.</li>
+<li>targets <code>Attrition</code> and <code>Monthly_Income</code>.</li>
+</ul>
+</li>
+<li>
+<p><a href="files/test_Attrition.csv">test_Attrition.csv</a>: List of 200 employees with the <code>Attrition</code> attribute missing, so this target needs to be predicted by a <em>classification</em> model.</p>
+</li>
+<li>
+<p><a href="files/test_Monthly_Income.csv">test_Monthly_Income.csv</a>: List of 250 employees with the <code>Monthly_Income</code> attribute missing, so it needs to be predicted by a <em>regression</em> model.</p>
+</li>
+</ul>
+<p>Note that some of the categorical features have already been coded. Also when predicting <code>Attrition</code> the column <code>Monthly_Income</code> can be treated as a feature, and similarly <code>Attrition</code> can be treated as a feature when predicting <code>Monthly_Income</code>.</p>
+<h1>Task 0: Setup</h1>
+<ul>
+<li>Create a folder for this assignment. Your notebooks should be saved into this folder.</li>
+<li>Create subfolder <code>data</code> in your assignment folder and place the three data files 
+ (<a href="files/train.csv">train.csv</a>, <a href="files/test_Attrition.csv">test_Attrition.csv</a>, and <a href="files/test_Monthly_Income.csv">test_Monthly_Income.csv</a>) into this folder.</li>
+</ul>
+<h1>Task 1: Exploratory Data Analysis (worth 40% of the marks)</h1>
+<p>Load data and preform a typical EDA. </p>
+<ul>
+<li>For each feature generate suitable summary/statistics.</li>
+<li>Comment on any interesting observations relating to the feature itself or in relation with either target.</li>
+<li>Suggest which attributes might become valuable features in predictive models.</li>
+</ul>
+<p>Remember: Exploratory Data Analysis is important since a successful EDA stage will help to understand the data and to prepare it for further analysis.</p>
+<h1>Task 2: Predicating <code>Attrition</code> as a target (worth 30% of the marks)</h1>
+<ul>
+<li>Build a classification model to predict the categorical target <code>Attrition</code>. </li>
+<li>Since the model is imbalanced use the <code>f1</code> metric to score the model.</li>
+<li>Use the model to generate predictions for the cases in the <code>data/test_Attrition.csv</code> file.</li>
+<li>Determine which features are important in predicting <code>Attrition</code>.</li>
+<li>Comment on the quality of the model, as a predictor of <code>Attrition</code>.</li>
+<li>Save predictions to CSV file <code>pred_Attrition.csv</code>.</li>
+</ul>
+<p>The choice of classification algorithm is left to the student, who should justify this choice based on the characteristics of the data and of the task.</p>
+<h1>Task 3: Predicating <code>Monthly_Income</code> as a target (worth 30% of the marks)</h1>
+<ul>
+<li>Build a regression model to predict the numerical target <code>Monthly_Income</code>.</li>
+<li>Use root mean square error (RMSE) to score the model.</li>
+<li>Use the model to generate predictions for the cases in file <code>data/test_Monthly_Income.csv</code>.</li>
+<li>Use plots to check that the standard assumptions for regression are met by the model you propose.</li>
+<li>Comment on the quality of the model, as a predictor of <code>Monthly_Income</code>, and how you would interpret the model.</li>
+<li>Save predictions to CSV file  <code>pred_Monthly_Income.csv</code>.</li>
 </ul>
 <h2>Submission</h2>
-<p>Slack channel for questions/updates: <a href="ttps://datamining2021s2.slack.com/archives/C02UQU4P50R">https://datamining2021s2.slack.com/archives/C02UQU4P50R</a></p>
-<p>Since your Kaggle and Moodle accounts are separate, you will also need to upload to Moodle your predictions for final grading. </p>
-<p>You will need to upload:</p>
+<p>Slack channel for questions/updates: <a href="https://datamining2021s2.slack.com/archives/C02UC9CNH5Y">https://datamining2021s2.slack.com/archives/C02UC9CNH5Y</a></p>
+<p>You will need to upload three files (uncompressed):</p>
 <ul>
-<li>A notebook containing your best preforming model.  The notebook should contain a markdown cell with a list of your submissions containing submission score and outline of the attempt.</li>
-<li>A CSV of your predictions (file you uploaded to Kaggle to score.)</li>
+<li>A python notebook (.ipynb) containing your best preforming model. The notebook should:</li>
+<li>be executable if placed in a folder that has the subfolder <code>data</code> containing the three data files.</li>
+<li>generate the two predictions files: <code>pred_Attrition.csv</code> and <code>pred_Monthly_Income.csv</code>.</li>
+<li>Your two prediction files (.csv) <code>pred_Attrition.csv</code> and <code>pred_Monthly_Income.csv</code>.</li>
 </ul>
 <div class="pager">
-<a class="btn btn-primary btn-lg" target="_blank" href="https://moodle.wit.ie/mod/assign/view.php?id=3718229" role="button">Submit using Moodle</a>
+<a class="btn btn-primary btn-lg" target="_blank" href="https://moodle.wit.ie/mod/assign/view.php?id=3739775" role="button">Submit using Moodle</a>
 </div>
-
-<h2>Grading</h2>
-<p>The grading for this assignment is based on:</p>
-<ul>
-<li>the model performance 60%</li>
-<li>details of model implementation and steps attempted to improve to model 40%</li>
-</ul>
 		
 		<ul class="pager">
 			
