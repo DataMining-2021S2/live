@@ -5,11 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<<<<<<< HEAD
-    <title>MSc - Data Mining</title>
-=======
     <title>MSc Data Mining</title>
->>>>>>> 56e98dcae3443b1b8a09a1d6b9341f228d4c0233
 
     <!-- Bootstrap core CSS -->
     <link href="../../../style/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -115,7 +111,7 @@
 											<a href="../../../topics/09-Association_Analysis/index.html">Association Analysis</a>
 										</li>
 										
-										<li class="active">
+										<li >
 											<a href="../../../topics/10-Anomaly_Detection_and_Recommendation_Systems/index.html">Anomaly Detection and Recommendation Systems</a>
 										</li>
 										
@@ -123,7 +119,7 @@
 											<a href="../../../topics/11-Deep_Learning/index.html">Deep Learning</a>
 										</li>
 										
-										<li >
+										<li class="active">
 											<a href="../../../topics/21-Assignments/index.html">Assignments</a>
 										</li>
 										
@@ -145,11 +141,19 @@
 										<li class="dropdown-header">Resources</li>
 										
 										<li >
-											<a href="../../../topics/10-Anomaly_Detection_and_Recommendation_Systems/index.html#01-Overview">Overview</a>
+											<a href="../../../topics/21-Assignments/index.html#01-DM_Proposal">DM Proposal</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/21-Assignments/index.html#02-Kaggle_Style_Competition">Kaggle Style Competition</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/21-Assignments/index.html#03-EDA_Employee_Dataset">EDA Employee Dataset</a>
 										</li>
 										
 										<li class="active">
-											<a href="../../../topics/10-Anomaly_Detection_and_Recommendation_Systems/index.html#02-Practical">Practical</a>
+											<a href="../../../topics/21-Assignments/index.html#04-ARM_Groceries_RS_Movies">ARM Groceries RS Movies</a>
 										</li>
 										
 									</ul>
@@ -196,38 +200,103 @@
 			
 		</ul>
 		
-		<h1>Anomaly Detection (pyod) and Recommender Systems (surprise)</h1>
-<p>As usual, each notebook should be downloaded to your laptop and run using <code>jupyter-notebook</code> or <code>jupyter-lab</code>, as
-described in previous practicals.</p>
-<p>The notebooks can be obtained from the following links:</p>
-<ul>
-<li><a href="files/Practical_A_Surprise_FilmTrust.ipynb">Applying Recommender Systems from the Surprise library to MovieLens data</a></li>
-<li><a href="files/Practical_B_PYOD_Digits.ipynb">Applying outlier detection from the PYOD library to Digits data</a></li>
-</ul>
-<h2>Installation</h2>
-<p>You will need to update your python packages by installing <code>pyod</code> and
-<code>scikit-surprise</code>, using the following commands:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>conda install -c conda-forge pyod
-
-conda install -c conda-forge scikit-surprise
-
-conda install -c anaconda joblib
-</code></pre></div>
-</td></tr></table>
-<h2>Resources</h2>
-<p>The datafile used for outlier detection came from the <a href="http://odds.cs.stonybrook.edu/mnist-dataset/">ODDS collection of datasets</a>. The format has been standardised and can be obtained from here:</p>
-<ul>
-<li><a href="files/data/mnist.mat">Selected pixel values for '0's (inliers) and '6's (outliers) in the MNIST digits data</a>.</li>
-<li>Another file that should be added to the data folder is <a href="files/data/selected_pyod.pdf">this overview of pyod results</a>.</li>
-</ul>
-<p>Both files should be downloaded and placed in a <code>data</code> folder below where you placed the associated notebook.</p>
-<ul>
-<li>The FilmTrust data can be downloaded using the code in the notebook. However, for your convenience it can be downloaded directly to the data folder from <a href="files/data/filmtrust.zip">here</a>.</li>
-</ul>
+		<h1>Assessment 4: ARM and Recommendation tasks</h1>
+<h2>Aim</h2>
+<p>The purpose of this assessment is to give students the opportunity to show what
+they have learned in the module by <em>doing</em> data mining, particularly
+<em>association analysis</em> and <em>recommender systems</em>.</p>
+<p>The dataset for each is well-known (the <code>grocery.csv</code> set for the former, and
+the smallest of the <em>Movielens</em> movie rating databases for the latter).</p>
+<p>Specific tasks are set, relating to how the analysis is set up, how to
+configure the machine learning techniques, and how to interpret and/or improve
+the results.</p>
+<h1>Format of submissions</h1>
+<p>Students are asked to submit two Jupyter notebooks, one for each part of the
+assessment, together with any supporting resources needed to run the analysis.
+If you use any additional python packages, please indicate where they can be
+found too.</p>
+<p>Students are reminded to use the markdown cells in their notebooks to explain
+their reasoning, discuss outputs and report on the progress of their data
+investigation.  Students are also advised to use both tabular and plotted
+output to present their work. Each notebook should read like a technical
+report, with all findings supported by evidence.</p>
+<h2>Submission mode and Deadline</h2>
+<p>Assignment attempts should be uploaded via the <a href="https://moodle.wit.ie/mod/assign/view.php?id=3739952">Moodle submission
+page</a>. You can upload as
+often as you wish, but please remember to <em>submit</em> the version you wish us to
+grade.</p>
+<p>The deadline for submission is <strong>Sunday 15 May 2022 at 23:00</strong>.</p>
+<h2>Marking scheme</h2>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>Criterion</th>
+<th>Marks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ARM: Select transactions for a country and prepare vertical format dataframe</td>
+<td>10</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ARM: Derive association rules whose lift is 1 and process them</td>
+<td>15</td>
+</tr>
+<tr>
+<td>3</td>
+<td>ARM: Compare and recommend one of two rules that differ by direction</td>
+<td>15</td>
+</tr>
+<tr>
+<td>4</td>
+<td>RS: Read data and preprocess it to make it ready</td>
+<td>10</td>
+</tr>
+<tr>
+<td>5</td>
+<td>RS: Apply filter and visualise movie count</td>
+<td>10</td>
+</tr>
+<tr>
+<td>6</td>
+<td>RS: Investigate rating counts and averages</td>
+<td>25</td>
+</tr>
+<tr>
+<td>7</td>
+<td>RS: Benchmark recommender algorithms in terms of their error and their timings</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+<p>This assignment is worth 20% of your overall grade for this module.</p>
+<h2>Detailed specification</h2>
+<p>A detailed specification has been prepared in the format of a python notebook
+for each section.</p>
+<p>This includes advice on how to obtain the data and how to perform some initial
+processing so that the data is ready for the next stage of processing.</p>
+<p>Association analysis and recommendation tasks are set and students are asked to
+investigate the data using these approaches. If a student wishes to add extra
+forms of analysis which prove enlightening, bonus marks might be added, but the
+core tasks should be attempted at the very least.</p>
+<p>For more details, please refer to the <a href="files/assignment4-ARM_spec.ipynb">ARM
+specification</a> and <a href="files/assignment4-RS_spec.ipynb">RS
+specification</a> notebooks.</p>
+<h2>What to do next</h2>
+<p>Compared to Assessment 3, the tasks are more explicit and so students should
+begin by attempting to complete them, using what they have learnt from Week 09
+(Association Analysis) and Week 10 (Anomaly Detection and Recommender Systems),
+supplemented as always by the EDA and model building approaches they have
+learnt earlier in the module. </p>
+<p>There is a <a href="https://datamining2021s2.slack.com/archives/C02U9BZM3FX">slack channel for questions/updates on
+CA4</a>.</p>
+<div class="pager">
+<a class="btn btn-primary btn-lg" target="_blank" href="https://moodle.wit.ie/mod/assign/view.php?id=3739952" role="button">Submit using Moodle</a>
+</div>
 		
 		<ul class="pager">
 			
