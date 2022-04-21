@@ -148,6 +148,14 @@
 											<a href="../../../topics/21-Assignments/index.html#02-Kaggle_Style_Competition">Kaggle Style Competition</a>
 										</li>
 										
+										<li >
+											<a href="../../../topics/21-Assignments/index.html#03-EDA_Employee_Dataset">EDA Employee Dataset</a>
+										</li>
+										
+										<li >
+											<a href="../../../topics/21-Assignments/index.html#04-ARM_Groceries_RS_Movies">ARM Groceries RS Movies</a>
+										</li>
+										
 									</ul>
 								</li>
 							</ul>
@@ -194,28 +202,29 @@
 		
 		<h1>Kaggle Style Competition</h1>
 <h2>Outline</h2>
-<p><a href="https://www.kaggle.com">Kaggle</a> is a data science community website that hosts numerous guides, datasets, and runs online competitions. Recently they added the feature of <a href="https://www.kaggle.com/c/about/community">Community Competitions</a> where anybody can host a competition using Kaggle's platform. </p>
-<p>Kaggle is a fantastic resource and to encourage you to explore it, this assignment is going to be run using Kaggle's platform. </p>
-<p>You'll need a private key to access the competition, which is semi-private. 
-This key can be found in the <a href="https://moodle.wit.ie/mod/assign/view.php?id=3718147">assignment page on Moodle</a>.</p>
-<p>Your task is to analyse the given dataset and construct a suitable classifier. The performance of your classifier is computed based on your uploaded predictions. </p>
+<p><a href="https://www.kaggle.com/">Kaggle</a> is a data science community website that hosts numerous guides, datasets, and runs online competitions. Recently they added the feature of <a href="https://www.kaggle.com/c/about/community">Community Competitions</a> where anybody can host a competition using Kaggle's platform.</p>
+<p>Kaggle is a fantastic resource and to encourage you to explore it, this assignment is going to be run using Kaggle's platform.</p>
+<p>You'll need a private key to access the competition, which is semi-private. This key can be found in <a href="https://moodle.wit.ie/mod/assign/view.php?id=3718147">the assignment page on Moodle</a>.</p>
+<p>Your task is to analyse the given dataset and construct a suitable classifier. The performance of your classifier is computed based on your uploaded predictions.</p>
 <h2>Details</h2>
 <ul>
 <li>First create a Kaggle account (using whatever account name/details you wish) and read the competition instructions (Please ask if there is anything that is unclear).</li>
 <li>Setup a suitable ML project folder.</li>
 <li>Download the train and test datasets, <code>train.csv</code> and <code>test.csv</code>.</li>
-<li>Split <code>train.csv</code> into your train and test datasets. </li>
+<li>Split <code>train.csv</code> into your <code>df_train</code> and <code>df_test</code> datasets.</li>
 <li>Train a classifier using the workflow covered during the course.</li>
-<li>Using your model, generate predictions for the data in <code>test.csv</code> and upload.</li>
+<li>Using your model, generate predictions for the data in test.csv and upload.</li>
 <li>At end of module upload your best scoring set of predictions to Moodle for grading.</li>
 </ul>
-<h2>Submission</h2>
+<h2>Submissions</h2>
 <p>Slack channel for questions/updates: <a href="ttps://datamining2021s2.slack.com/archives/C02UQU4P50R">https://datamining2021s2.slack.com/archives/C02UQU4P50R</a></p>
 <p>Since your Kaggle and Moodle accounts are separate, you will also need to upload to Moodle your predictions for final grading. </p>
-<p>You will need to upload:</p>
+<p>You will need to upload two files (uncompressed):</p>
 <ul>
-<li>A notebook containing your best preforming model.  The notebook should contain a markdown cell with a list of your submissions containing submission score and outline of the attempt.</li>
-<li>A CSV of your predictions (file you uploaded to Kaggle to score.)</li>
+<li>A python notebook (<code>Model.ipynb</code>) containing your best preforming model.  The notebook should </li>
+<li>Contain a markdown cell with a list of your submissions containing submission score and outline of the attempt.</li>
+<li>Should be executable if placed in a folder that has the subfolder <code>data</code> containing the data files downloaded from Kaggle.</li>
+<li>Your predictions (<code>submission.csv</code>). This should be the file that you uploaded to Kaggle to score.</li>
 </ul>
 <div class="pager">
 <a class="btn btn-primary btn-lg" target="_blank" href="https://moodle.wit.ie/mod/assign/view.php?id=3718229" role="button">Submit using Moodle</a>
@@ -224,8 +233,8 @@ This key can be found in the <a href="https://moodle.wit.ie/mod/assign/view.php?
 <h2>Grading</h2>
 <p>The grading for this assignment is based on:</p>
 <ul>
-<li>the model performance 60%</li>
-<li>details of model implementation and steps attempted to improve to model 40%</li>
+<li>The model performance 60%</li>
+<li>Details of the implemented model and steps attempted to improve to model 40%</li>
 </ul>
 		
 		<ul class="pager">
